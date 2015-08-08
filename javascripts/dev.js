@@ -53,12 +53,23 @@ function addRow(){
     var type=$('#type').val();
     var make=$('#make').val();
     var model=$('#model').val();
-    if(type==='Select a Type'||!make||!model){
+    if(type===$('#type option:first').val()||!make||!model){
       alert('Please add data in all the fields');
       return;
     }
+    var complete_data_string=type+make+model;
+
+    $('#type').val($('#type option:first').val());
+    $('#make').val('');
+    $('#model').val('');
+    if($('#search').val().length>=3&&complete_data_string.indexOf($('#search').val())>-1){
+    $('#tblData tbody').append('<tr class="selectedRow"><td>'+type+'</td><td>'+make+'</td><td>'+model+'</td></tr>');
+    }
+    else{
     
-$('#tblData tbody').append('<tr><td>'+type+'</td><td>'+make+'</td><td>'+model+'</td></tr>')
+    $('#tblData tbody').append('<tr><td>'+type+'</td><td>'+make+'</td><td>'+model+'</td></tr>');
+    }
+   
 }
 
 
@@ -87,5 +98,5 @@ function tableToJson() {
    })
        
 var jsonData=JSON.stringify({"tableData":data})
-   $('#jsonInsert').text(jsonData)
+   $('#jsonInsert').show().text(jsonData)
 }

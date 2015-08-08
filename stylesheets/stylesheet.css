@@ -1,3 +1,80 @@
+
 .selectedRow{
 background-color: #E8E814
+}
+input[type='button']{
+  background-color: #5A5858;
+  color: #FFFFFF;
+  border-radius: 24%;
+ 
+}
+ .plusButton{
+    width: 6.1%;
+       font-size:20px;
+     height: 34px;
+     margin-left:1%;
+  
+  
+}
+    
+.jsonButton {
+    margin-left: 85%;
+    width: 6.6%;
+     font-size:14px;
+    margin-top: 2%;
+    height:34px;
+}
+.addArea{
+
+    background-color: #F3F1F1;
+    height: 167px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+input[type="text"]{
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+}
+.addArea  select,.addArea input[type="text"]{
+display: inline;
+}
+label{
+margin-left:2%;
+    color:#8E8C8C;
+    margin-top:3%;
+}
+.search {
+    margin-left: 54.5%;
+    width: 31.5%;
+   
+}
+hr{
+    width:95%;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(208, 199, 199);
+}
+.container {
+    width: 69%;
+    margin-top: 2%;
+    
+}
+td,th{
+padding:1%;
+    text-transform:capitalize;
+}
+.glyphicon-search {
+    margin-left: 83%;
+    margin-top: -24px;
+}
+
+#jsonInsert {
+    border: 1px solid green;
+}
+.searchArea{
+    margin-top:10px;
+    margin-bottom: 1%;
 }

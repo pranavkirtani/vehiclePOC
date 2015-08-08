@@ -1,48 +1,46 @@
 <html>
     <link rel=stylesheet href="stylesheets/bootstrap.min.css">
+    
+
     <link rel="stylesheet" href="stylesheets/stylesheet.css">
     <script src="javascripts/jquery-1.11.3.min.js"></script>
 <script src="javascripts/dev.js"></script>
-    <div>
-        <select id="type">
+  <div class="container">  
+    <div class="addArea">
+        <label>Type
+        <select id="type" class="form-control">
             <option>Select a Type</option>
             <option>New</option>
             <option>Used</option>
             <option>Certified</option>
         </select>
-        <input type=text id="make">
-        <input type=text id="model">
-        <input type="button" id="add">
+            </label>
+         <label>Make
+        <input type=text id="make" class="form-control">
+             </label>
+         <label>Model
+        <input type=text id="model" class="form-control">
+            </label> 
+        <input type="button" id="add" value="+" class="plusButton">
+         <hr></hr>
+        <div class="searchArea">
+  <input  id="search" class="search form-control">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </div>
     </div>
 <div class="tables">
-    <input type="text" id="search"/>
+    
+ 
+</div>
+
 	<table width="100%" id="tblData" class="table-bordered">
 		<tbody>
-			<tr>
-				<td>New</td>
-				<td>Buick</td>
-				<td>Enclave</td>
-			</tr>
-			<tr>
-				<td >Used</td>
-				<td>Audi</td>
-				<td>A4</td>
-			</tr>
-			<tr>
-				<td >New</td>
-				<td >GMC</td>
-				<td >Acadia</td>
-			</tr>
-            <tr>
-				<td>New</td>
-				<td>Buick</td>
-				<td>Enclave</td>
-			</tr>
+			
 			
 		</tbody>
 	</table>
-</div>
 
-<input type=button id="json">
-    <div id="jsonInsert"></div>
+<input type=button id="json" value="JSON" class="jsonButton">
+    <div id="jsonInsert" style="display:none"></div>
+</div>
 </html>
